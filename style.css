@@ -1,9 +1,10 @@
-[8:21 pm, 11/02/2023] Akash: @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
 
 * {
     margin: 0;
     padding: 0;
 }
+
 body {
     font-family: 'Roboto', sans-serif;
     background-color: #f1f3f6;
@@ -22,7 +23,8 @@ header {
     background-color: var(--primary-color);
     height: 56px;
 }
-header .nav-container{
+
+header .nav-container {
     display: flex;
     /* justify-content: space-between; */
     align-items: center;
@@ -30,13 +32,15 @@ header .nav-container{
     max-width: 1248px;
     margin: 0 auto;
 }
+
 header .nav-container .logo {
     display: flex;
     min-width: 137px;
     justify-content: flex-end;
-    
+
 }
-header .nav-container .logo img{
+
+header .nav-container .logo img {
     width: 75px;
 }
 
@@ -46,7 +50,8 @@ header .search {
     align-items: center;
     margin-left: 12px;
 }
-header .search .search-container{
+
+header .search .search-container {
     width: 540px;
     height: 36px;
     background-color: white;
@@ -54,12 +59,14 @@ header .search .search-container{
     box-shadow: 0 2px 4px 0 rgb(0 0 0 / 23%);
     display: flex;
 }
+
 header .search .search-container input {
     width: calc(100% - 32px);
     padding: 16px;
     outline: none;
     border: none;
 }
+
 header .search .search-container button {
     width: 36px;
     height: 100%;
@@ -79,13 +86,16 @@ header .login {
     align-items: center;
     margin: 0 20px;
 }
+
 header .login button {
     width: 122px;
     padding: 5px 40px;
     font-size: 16px;
     font-weight: 600;
     color: var(--primary-color);
+    cursor: pointer;
 }
+
 header .become-seller {
     height: 100%;
     display: flex;
@@ -94,9 +104,10 @@ header .become-seller {
     color: white;
     font-size: 16px;
     font-weight: 500;
+    cursor: pointer;
 }
 
-header .more{
+header .more {
     height: 100%;
     display: flex;
     align-items: center;
@@ -104,7 +115,9 @@ header .more{
     color: white;
     font-size: 16px;
     font-weight: 500;
+    cursor: pointer;
 }
+
 header .more svg {
     margin-left: 8px;
     rotate: -90deg;
@@ -116,10 +129,24 @@ header .cart {
     align-items: center;
     margin: 0 20px;
     color: white;
+    cursor: pointer
 }
+
 header .cart svg {
     margin-right: 8px;
+    cursor: pointer;
 }
+
+.login :hover {
+
+    background-color: #3f76c9;
+    color: white;
+}
+header a {
+color: white;
+
+}
+
 
 /* section 1 */
 .section-1 {
@@ -128,17 +155,19 @@ header .cart svg {
     background-color: white;
     box-shadow: 0 1px 1px 0 rgb(0 0 0 / 16%);
 }
-.section-1-container{
+
+.section-1-container {
     width: 1280px;
     margin: 0 auto;
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    
+
 
 }
-.section-1-item{
+
+.section-1-item {
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -147,6 +176,7 @@ header .cart svg {
     gap: 4px;
     font-size: 14px;
     font-weight: 500;
+
 }
 
 .section-1-item img {
@@ -154,9 +184,17 @@ header .cart svg {
     height: 64px;
 }
 
+a {
+    text-decoration: none;
+    color: black;
+
+}
+
+
+
 /* section 2 */
 .section-2-container {
-    margin-top: 16px;
+    margin-top: 6px;
     height: 280px;
     background-image: url('https://rukminim1.flixcart.com/fk-p-flap/3376/560/image/0735712fe84c602d.jpg?q=50');
     background-size: cover;
@@ -184,6 +222,7 @@ header .cart svg {
     justify-content: space-between;
     align-items: center;
 }
+
 .section-4-offers {
     width: 230px;
     height: 100%;
@@ -191,7 +230,8 @@ header .cart svg {
     background-position: bottom;
     background-repeat: no-repeat;
 }
-.section-4-offers-viewall{
+
+.section-4-offers-viewall {
     margin-top: 132px;
     width: 100%;
     font-size: 30px;
@@ -199,6 +239,7 @@ header .cart svg {
     flex-direction: column;
     align-items: center;
 }
+
 .section-4-offers-viewall button {
     margin-top: 24px;
     height: 40px;
@@ -212,13 +253,15 @@ header .cart svg {
     border-radius: 2px;
     cursor: pointer;
 }
+
 .section-4-list {
     height: 100%;
     width: calc(100% - 230px);
     display: flex;
     overflow-x: auto;
 }
-.section-4-item{
+
+.section-4-item {
     width: 232px;
     height: 100%;
     padding: 0px 15px;
@@ -227,33 +270,41 @@ header .cart svg {
     align-items: center;
     justify-content: center;
 }
+
 .section-4-item img {
     max-width: 200px;
     max-height: 200px;
 }
-.section-4-item-head{
+
+.section-4-item-head {
     margin-top: 16px;
     font-size: 14px;
     font-weight: 500;
 }
+
 .section-4-item-price {
     margin-top: 12px;
     font-size: 16px;
     color: #388e3c;
 }
-.section-4-item-explore{
+
+.section-4-item-explore {
     opacity: 0.6;
     margin-top: 12px;
     font-weight: 300;
     font-size: 12px;
 }
 
+
+
+
 /* section-5 */
 .section-5 {
-    margin-top: 8px ;
+    margin-top: 8px;
     display: flex;
     justify-content: space-between;
 }
+
 .section-5 img {
     width: 33%;
 }
@@ -265,5 +316,5 @@ footer {
     padding: 25px;
     text-align: center;
     font-size: 14px;
-    color: #878787 ;
+    color: #878787;
 }
